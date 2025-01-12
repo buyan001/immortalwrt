@@ -592,7 +592,7 @@ Signed-off-by: Heiko Stuebner <heiko@sntech.de>
 +		snps,dis-u2-freeclk-exists-quirk;
 +		snps,dis-del-phy-power-chg-quirk;
 +		snps,dis-tx-ipgap-linecheck-quirk;
-+		status = "disabled";
++		status = "okay";
 +	};
 +
 +	usb_host0_ehci: usb@fc800000 {
@@ -657,7 +657,7 @@ Signed-off-by: Heiko Stuebner <heiko@sntech.de>
 +		snps,dis-del-phy-power-chg-quirk;
 +		snps,dis-tx-ipgap-linecheck-quirk;
 +		snps,dis_rxdet_inp3_quirk;
-+		status = "disabled";
++		status = "okay";
 +	};
 +
 +	mmu600_pcie: iommu@fc900000 {
@@ -2778,7 +2778,7 @@ Signed-off-by: Heiko Stuebner <heiko@sntech.de>
 +		snps,dis-u2-freeclk-exists-quirk;
 +		snps,dis-del-phy-power-chg-quirk;
 +		snps,dis-tx-ipgap-linecheck-quirk;
-+		status = "disabled";
++		status = "okay";
 +	};
 +
 +	pcie30_phy_grf: syscon@fd5b8000 {
@@ -2812,11 +2812,11 @@ Signed-off-by: Heiko Stuebner <heiko@sntech.de>
 +			interrupts = <GIC_SPI 394 IRQ_TYPE_LEVEL_HIGH 0>;
 +			resets = <&cru SRST_OTGPHY_U3_1>, <&cru SRST_P_USB2PHY_U3_1_GRF0>;
 +			reset-names = "phy", "apb";
-+			status = "disabled";
++			status = "okay";
 +
 +			u2phy1_otg: otg-port {
 +				#phy-cells = <0>;
-+				status = "disabled";
++				status = "okay";
 +			};
 +		};
 +	};
@@ -4110,7 +4110,7 @@ Signed-off-by: Heiko Stuebner <heiko@sntech.de>
 -		snps,dis-u2-freeclk-exists-quirk;
 -		snps,dis-del-phy-power-chg-quirk;
 -		snps,dis-tx-ipgap-linecheck-quirk;
--		status = "disabled";
+-		status = "okay";
 -	};
 -
 -	usb_host0_ehci: usb@fc800000 {
@@ -4121,7 +4121,7 @@ Signed-off-by: Heiko Stuebner <heiko@sntech.de>
 -		phys = <&u2phy2_host>;
 -		phy-names = "usb";
 -		power-domains = <&power RK3588_PD_USB>;
--		status = "disabled";
+-		status = "okay";
 -	};
 -
 -	usb_host0_ohci: usb@fc840000 {
@@ -4132,7 +4132,7 @@ Signed-off-by: Heiko Stuebner <heiko@sntech.de>
 -		phys = <&u2phy2_host>;
 -		phy-names = "usb";
 -		power-domains = <&power RK3588_PD_USB>;
--		status = "disabled";
+-		status = "okay";
 -	};
 -
 -	usb_host1_ehci: usb@fc880000 {
@@ -4143,7 +4143,7 @@ Signed-off-by: Heiko Stuebner <heiko@sntech.de>
 -		phys = <&u2phy3_host>;
 -		phy-names = "usb";
 -		power-domains = <&power RK3588_PD_USB>;
--		status = "disabled";
+-		status = "okay";
 -	};
 -
 -	usb_host1_ohci: usb@fc8c0000 {
@@ -4154,7 +4154,7 @@ Signed-off-by: Heiko Stuebner <heiko@sntech.de>
 -		phys = <&u2phy3_host>;
 -		phy-names = "usb";
 -		power-domains = <&power RK3588_PD_USB>;
--		status = "disabled";
+-		status = "okay";
 -	};
 -
 -	usb_host2_xhci: usb@fcd00000 {
